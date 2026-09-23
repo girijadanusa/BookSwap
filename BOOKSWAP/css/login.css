@@ -1,0 +1,133 @@
+:root {
+  --auth-dark: #292f2e;
+}
+.auth-page {
+  background: var(--auth-dark);
+  min-height: 100vh;
+}
+.auth-layout {
+  display: grid;
+  grid-template-columns: minmax(400px, 1fr) minmax(360px, 0.8fr);
+  min-height: 100vh;
+}
+.auth-brand {
+  color: #fff;
+  left: 5vw;
+  position: absolute;
+  top: 28px;
+}
+.auth-brand .brand-accent {
+  color: #e98d7a;
+}
+.auth-panel {
+  align-self: center;
+  background: var(--paper);
+  margin: 70px 0 0 10vw;
+  max-width: 525px;
+  padding: 55px 65px;
+}
+.auth-panel h1 {
+  font-size: 48px;
+}
+.auth-aside {
+  align-items: flex-start;
+  background: var(--ruby);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12vw;
+}
+.auth-aside .eyebrow {
+  color: #f2c5b8;
+}
+.auth-aside blockquote {
+  font-family: var(--serif);
+  font-size: 44px;
+  line-height: 1.03;
+  margin: 20px 0 30px;
+}
+.auth-aside > span {
+  color: #f2c5b8;
+  font-size: 13px;
+}
+.register-panel {
+  max-width: 650px;
+}
+.register-aside {
+  background: #4a5550;
+}
+.quote-stat {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  gap: 22px;
+  padding: 22px 0;
+  width: 100%;
+}
+.quote-stat strong {
+  color: #f2c5b8;
+  font-family: var(--serif);
+  font-size: 24px;
+}
+.quote-stat span {
+  font-size: 14px;
+}
+.request-main,
+.form-page {
+  padding-bottom: 100px;
+  padding-top: 75px;
+}
+.request-layout {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 45px;
+  max-width: 900px;
+}
+.selected-book {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+.selected-book-row {
+  align-items: center;
+  display: flex;
+  gap: 18px;
+  margin: 28px 0;
+}
+.selected-book h3 {
+  font-family: var(--serif);
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+.selected-book p {
+  color: var(--muted);
+  font-size: 12px;
+}
+.mini-book {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-family: var(--serif);
+  font-size: 30px;
+  height: 78px;
+  justify-content: center;
+  width: 58px;
+}
+.mini-coral {
+  background: var(--coral);
+}
+.mini-ink {
+  background: #293036;
+}
+.wide-form {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  max-width: 850px;
+  padding: 40px;
+}
+.wide-form .button {
+  align-self: flex-start;
+  margin-top: 8px;
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a book | BOOKSWAP</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body class="app-page">
+    <header class="app-header">
+      <a class="brand" href="dashboard.html"
+        ><span class="brand-mark">B</span
+        ><span>BOOK<span class="brand-accent">SWAP</span></span></a
+      >
+      <nav class="main-nav">
+        <a href="dashboard.html">Home</a><a href="explore.html">Explore</a
+        ><a class="active" href="dashboard.html#requests">Requests</a>
+      </nav>
+      <div class="header-actions">
+        <a class="avatar" href="dashboard.html#profile">AS</a>
+      </div>
+    </header>
+    <main class="request-main section-wrap">
+      <div class="request-heading-large">
+        <p class="eyebrow">Make a request</p>
+        <h1>Start the <em>exchange.</em></h1>
+        <p class="muted">
+          Tell the owner how you would like this book to find its next reader.
+        </p>
+      </div>
+      <section class="request-layout">
+        <div class="selected-book">
+          <p class="eyebrow">Selected book</p>
+          <div class="selected-book-row">
+            <div class="mini-book mini-coral">A</div>
+            <div>
+              <h3 id="selected-title">Atomic Habits</h3>
+              <p>James Clear · Listed by Maya S.</p>
+            </div>
+          </div>
+          <a class="text-link" href="book-details.html">Change book →</a>
+        </div>
+        <form id="exchange-form" class="request-form form-stack">
+          <label
+            >Request type<select name="type">
+              <option>Exchange</option>
+              <option>Borrow</option>
+              <option>Give Away</option>
+            </select></label
+          ><label
+            >Your name<input
+              name="name"
+              placeholder="Full name"
+              required /></label
+          ><label
+            >Message to owner<textarea
+              name="message"
+              rows="4"
+              placeholder="Tell them why this book would be useful to you..."
+            ></textarea></label
+          ><button class="button" type="submit">
+            Send request <span>→</span>
+          </button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <script src="../js/main.js"></script>
+    <script src="../js/exchange.js"></script>
+  </body>
+</html>

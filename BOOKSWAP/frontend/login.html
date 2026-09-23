@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in | BOOKSWAP</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-layout">
+      <a class="brand auth-brand" href="index.html"
+        ><span class="brand-mark">B</span
+        ><span>BOOK<span class="brand-accent">SWAP</span></span></a
+      >
+      <section class="auth-panel">
+        <p class="eyebrow">Welcome back</p>
+        <h1>Pick up where<br /><em>you left off.</em></h1>
+        <p class="muted">
+          Sign in to manage your shelf, requests and exchanges.
+        </p>
+        <form id="login-form" class="form-stack">
+          <label
+            >Email<input
+              type="email"
+              name="email"
+              placeholder="you@college.edu"
+              required /></label
+          ><label
+            >Password<input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+          /></label>
+          <div class="form-row">
+            <label class="check-label"
+              ><input type="checkbox" /> Remember me</label
+            ><a href="#" class="text-link">Forgot password?</a>
+          </div>
+          <button class="button full-width" type="submit">
+            Log in <span>→</span>
+          </button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+        <p class="auth-switch">
+          New to BOOKSWAP? <a href="register.html">Create an account</a>
+        </p>
+      </section>
+      <aside class="auth-aside">
+        <p class="eyebrow">Your campus shelf</p>
+        <blockquote>
+          “The right book can change the direction of a semester.”
+        </blockquote>
+        <span>Discover, exchange and pass it on.</span>
+      </aside>
+    </main>
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+  </body>
+</html>
