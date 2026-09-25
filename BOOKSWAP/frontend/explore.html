@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore books | BOOKSWAP</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body class="app-page">
+    <header class="app-header">
+      <a class="brand" href="dashboard.html"
+        ><span class="brand-mark">B</span
+        ><span>BOOK<span class="brand-accent">SWAP</span></span></a
+      >
+      <nav class="main-nav">
+        <a href="dashboard.html">Home</a
+        ><a class="active" href="explore.html">Explore</a
+        ><a href="dashboard.html#requests">Requests</a
+        ><a href="dashboard.html#wishlist">Wishlist</a>
+      </nav>
+      <div class="header-actions">
+        <span class="location">⌖ Your campus</span
+        ><a class="notification" href="#">♢<i></i></a
+        ><a class="avatar" href="dashboard.html#profile">AS</a>
+      </div>
+    </header>
+    <main class="explore-main section-wrap">
+      <section class="explore-hero">
+        <div>
+          <p class="eyebrow">The community shelf</p>
+          <h1>Find a book.<br /><em>Pass it on.</em></h1>
+        </div>
+        <p class="explore-intro">
+          Browse books listed by students near you. Search by title, author or
+          what you feel like learning next.
+        </p>
+      </section>
+      <form id="search-form" class="search-bar">
+        <span>⌕</span
+        ><input
+          id="book-search"
+          type="search"
+          placeholder="Search by title, author or subject"
+        /><select id="category-filter">
+          <option value="all">All categories</option>
+          <option value="Academic">Academic</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Skills">Skills</option></select
+        ><button class="button" type="submit">Search</button>
+      </form>
+      <div class="filter-row">
+        <span id="result-count">24 books nearby</span>
+        <div>
+          <button class="filter-chip active" data-filter="all">All books</button
+          ><button class="filter-chip" data-filter="Exchange">Exchange</button
+          ><button class="filter-chip" data-filter="Borrow">Borrow</button
+          ><button class="filter-chip" data-filter="Give Away">
+            Give away
+          </button>
+        </div>
+      </div>
+      <div id="book-list" class="book-grid book-grid-wide"></div>
+    </main>
+    <script src="../js/main.js"></script>
+    <script src="../js/books.js"></script>
+  </body>
+</html>
